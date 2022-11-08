@@ -1,0 +1,80 @@
+@charset "utf-8";
+@font-face {
+    font-family: "chopin script";
+    src: url("fontes/chopin-script/CHOPS___.TTF") format("truetype");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    --cor-0: #fa5d84;
+    --cor-1: #fc2cfc;
+    --cor-2: #c974df;
+    --cor-3: #f8329fb9;
+    --cor-4: #e45ae4;
+
+    --fonte-destaque: "chopin script", "Times Tew Roman", "sans-serif";
+    --fonte-defalt: "arial", "sans-serif";
+}
+
+body {
+    background-color: var(--cor-4);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwkYNqrsJFfrfVg8bAF6hRUVRjLGEjuYYLBw&usqp=CAU);
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+    /*background-color: var(--cor-0);*/
+    height: 5em;
+}
+
+header > h1 {
+    font-size: 3.5em;
+    font-family: var(--fonte-destaque);
+    font-weight: 100;
+}
+
+main {
+    background-color: white;
+    max-width: 100vh;
+    min-height: 60vh;
+    margin: auto;
+    padding: 1em 0px;
+}
+
+main > div {
+    background-color: var(--cor-3);
+    padding: 1em 1em 1em 0.1em;
+    width: max-content;
+    min-height: 5em;
+    border-radius: 0px 8px 8px 0px;
+}
+
+main > div > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main > div > ul > li {
+    list-style: none;
+}
+
+main > div > ul > li > button {
+    background-color: white;
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    padding: 0.2em;
+    border: 0px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+
+}

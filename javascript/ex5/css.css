@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(224, 133, 224);
+    font: normal 16pt arial;
+}
+
+h1 {
+    color: rgba(255, 255, 0, 0.781);
+}
+
+input, button {
+    background-color: rgb(84, 223, 84);
+    min-height: 2em;
+    min-width: 2em;
+    padding: 0.3em;
+    border: 0.1em solid black;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(84, 223, 84);
+    margin-top: 1em;
+    padding: 0.3em;
+    border: 0.01em solid black;
+}

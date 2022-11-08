@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(
+    40deg, rgb(14, 14, 187), rgb(0, 255, 21));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: #ffffffcc;
+    width: 19rem;
+    height: 34rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+main::before {
+    content: '';
+    background: #ffffff5e;
+    position: absolute;
+    inset: 0;
+    transform: rotate(-5deg);
+    border-radius: 5px;
+    z-index: -1;
+}

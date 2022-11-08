@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    background-color: rgb(224, 133, 224);
+    font: normal 16pt arial;
+}
+
+h1 {
+    color: rgba(255, 255, 0, 0.781);
+}
+
+div#área {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(84, 223, 84);
+    color: white;
+    padding: 0.3em;
+    height: 3em;
+    width: 10em;
+    border-radius: 10px;
+
+}

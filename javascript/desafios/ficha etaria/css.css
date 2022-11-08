@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #7bb2f1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font: bolder 20pt arial ;
+    color: white;
+    margin: 1em;
+}
+
+main {
+    line-height: 1.5em;
+    display: block;
+    background-color: white;
+    width: max-content;
+    padding: 0.5em;
+    margin: auto;
+}
