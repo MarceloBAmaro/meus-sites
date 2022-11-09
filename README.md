@@ -1,6 +1,3 @@
- 
- 
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +13,7 @@
     </style>
 </head>
 <body>
-    <h1><a href="https://github.com/MarceloBAmaro" id="rep" rel="external">MarceloBAmaro.github.io</a></h1>
+    #<a href="https://github.com/MarceloBAmaro" id="rep" rel="external">MarceloBAmaro.github.io</a>
     <hr>
     <h1>repositório público de Marcelo</h1>
     <div>
