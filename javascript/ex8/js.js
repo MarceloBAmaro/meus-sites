@@ -6,7 +6,7 @@ function res() {
     var idade = Number(txtidade.value)
     if (idade < 16){
         var voto = 'imaginario'
-    } else if (idade < 18 || idade > 65){
+    } else if (idade < 18 || idade >= 65){
         var voto = 'opcional'
     } else if (idade < 65){
         var voto = 'obrigatorio'
