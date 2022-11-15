@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulas CSS</title>
+    <link rel="shortcut icon" href="midia/css icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body style="font-family: arial,GILL Sans, Helvetica, impact;">
+        <nav>
+            <a href="inicio.html" rel="prev">inicio</a>
+            <a href="aulas html.html">html</a>
+            <a href="">python</a>
+        </nav>
+        
+        <main>
+        <h1>Resumo aulas CSS</h1>
+        <h2><div class="avisos">as configurações globais são representadas por *</div></h2>
+        <h2>1-estilos</h2>
+        <ol>
+            <dt><h3>1.1-estilos inline</h3></dt>
+            <dd>O estilo inline é escrito dentro da tag com o comando &lt;STYLE=""&gt;. Dentro das aspas duplas vão as costumizações, todo final de customização de ter um &semi; para indicar que é o final das configurações daquela costumização</dd>
+            <dt><h3>1.2-estilos locais/internos</h3><dt></dt>
+            <dd>O estilo local/interno é escrito dentro de head comando &lt;STYLE&gt;</dd>
+            <dt><h3>1.3-estilos externos</h3></dt>
+            <dd>O estilo externo é escrito em outra pagina ex: <a href="estilo.css" target="_blank"> codigo exemplo</a><br></dd>
+            
+        </ol>
+        <h2>
+                <div class="avisos">você pode adicionar mais de um estilo externo</div>
+            </h2>
+        <h2><div class="avisos">os 3 tipos de estilos podem ser misturados</div></h2>
+        <h2>2-cores</h2>
+        <p>as cores são colocadas a partir das CSS há varios comandos para coloca-las estão aqui alguns</p>
+        <ol>
+            <li><strong>gradiente linear</strong><br>
+            O gradiente linear é colocado a partir da função &lt;background-image: linear-gradiente(#, $, @)&gt;<br>
+            sendo # o  angulo, $ uma cor, @ outra cor<br>
+            o angulo é representado em deg então 180° seriam 180deg<br>
+            as cores podem ser representadas em hexadecimal, decimal, hsl(conraste, luz e sombra) e ETC...<br>
+            pode haver mais de 2 cores em um gradiente
+            <li><strong>gradiente radial</strong><br>
+            O gradiente radial é colocado a partir do comando &lt;background-image: radial-gradient(#,$,@)&gt;<br>
+            sendo  sendo # o  angulo, $ uma cor, @ outra cor<br>
+            o angulo é representado em deg então 180° seriam 180deg<br>
+            as cores podem ser representadas em hexadecimal, decimal, hsl(conraste, luz e sombra) e ETC...<br>
+            pode haver mais de 2 cores em um gradiente</li>
+        </ol>
+        <p>Os gradientes podem ser colocados com uma porcentagem na frente de cada cor para mostrar quantos porcento aquela cor deve ocupar no gradiente</p>
+        <h2>3-formatação de estilo com CSS</h2>
+        <p>exemplo de um site formatado com css <a href="ex-site-css.html" type="next">link site</a><br>
+        algums comandos uteis:</p>
+        <ol>
+            <li><strong>posição na tela</strong><br>
+            A posição na tela é definida com o comando margin="#"<br>
+            com # podendo ser left, rigth, center, auto e end</li>
+            <li><strong>arrendodamento das quinas</strong><br>
+            é escrito com border-radius: #px;<br>
+            sendo # o numero de pixels que será arredondado</li>
+            <li><strong>sombra na borda</strong><br>
+            é escrito com box-shadow: #px $px @px &<br>
+            sendo # a quantidade de pixels que terá de sombra no lado direito, $ a quantidade de sombra que terá em baixo, @ a força do borrão que será aplicado ao lado e em baixo e & que é a cor da sombra</li>
+            <li><strong>espaçamento extra</strong><br>
+            o espaçamento extra é feito com padding: #px<br>
+            sendo # a quantidade de pixels</li>
+            <li><strong>espaçamento de inicio do parágrafo</strong><br>
+            o espaçamento de inicio de parágrafo e escrito com text-indent: #;<br>
+            sendo # o tamanho do espaçamento</li>
+            <li><strong>borda e outline</strong><br>
+            para colocar uma borda é necessario uma espessura(width) o estilo(ex: solid) e a cor<br>
+            há varios tipos de estilos aqui está uma lista:<br>
+            <ol>
+                <li><strong>none</strong>: sem borda;</li>
+                <li><strong>hidden</strong>: equivalente a none;</li>
+                <li><strong>dotted</strong>: borda pontilhada;</li>
+                <li><strong>dashed</strong>: borda tracejada;</li>
+                <li><strong>solid</strong>: borda contínua;</li>
+                <li><strong>double</strong>: borda dupla;</li>
+                <li><strong>groove</strong>: borda entalhada;</li>
+                <li><strong>ridge</strong>: borda em ressalto;</li>
+                <li><strong>inset</strong>: borda em baixo relevo;</li>
+                <li><strong>outset</strong>: borda em alto relevo.</li>
+            </ol></li>
+            <h2>shorthand</h2>
+            <p>para uma shorthand de uma borda se coloca border: tamanho estilo cor; nesta sequencia.<br>
+                para uma shorthand de um padding coloca-se padding: tamanho-topo tamanho-direita tamanho-baixo tamanho-esquerda; assim como o sentido horario de um relogio partindo do topo ou pode-se apenas colocar um valor que será colocado para todos os lados ou pode-se colocar dois valores onde o primeiro será o valor de cima  e de baixo e o segundo valor será o valor da direita e da esquerda.<br>
+                para uma shorthand de uma margem usa-se quase a mesma shorthand de padding com diferencial de que no lugar dos valores numericos pode-se colocar os valores escritos.<br>
+                para a shorthand de uma outline se usa a mesma shorthand que a border.</p>
+            <h3>alinhamento de texto</h3>
+            Os textos podem ser alinhado com o comando text-aling, o comando tem as seguintes oções:<br>
+            <ol>
+                <li>
+                    <strong>center</strong><br>
+                    alinha o texto no centro da box
+                </li>
+                <li>
+                    <strong>rigth</strong><br>
+                    alinha o texto a direita da box
+                </li>
+                <li>
+                    <strong>left</strong><br>
+                    alinha o texto a esquerda da box
+                </li>   
+                <li>
+                    <strong>auto</strong><br>
+                    alinha o texto automaticamente de acordo com o sistema
+                </li>  
+                <li>
+                    <strong>justfy</strong><br>
+                    alinha o texto de forma que ele fique mais organizado
+                </li> 
+
+            </ol>
+
+        </ol>
+        <h2>4-tipografia</h2>
+        <p>A tipografia é importante para trazer o sentimento da frase
+        <dl>
+            <dt>
+                <h3>4.1-fontes</h3>
+            </dt>
+            <dd>
+                as fontes são classificadas em 5 tipos que são as fontes serifadas(serif), as fontes não serifadas(sans-serif), as fontes monoespaçadas(monoespaced), as fontes escripitadas(da a impressão de que foi feita a mão) e as fontes display(não seguem as indentificações das fontes anteriores)<br>
+                aqui há uma lista de fontes seguras(fontes que estão em todo dispositivo):<br>
+                <ul>
+                    <li style="font-family: arial;">arial</li>
+                    <li style="font-family: baskerville;">baskerville</li>
+                    <li style="font-family: bodoni mt;">bodoni mt</li>
+                    <li style="font-family: calibri;">calibri</li>
+                    <li style="font-family: century gothic;">century gothic</li>
+                    <li style="font-family: consolas;">consolas</li>
+                    <li style="font-family: copperplate gothic;">copperplate gothic</li>
+                    <li style="font-family: courier new;">courier new</li>
+                    <li style="font-family: impact;">impact</li>
+                    <li style="font-family: microsoft sans serif;">microsoft sans serif</li>
+                    <li style="font-family: verdana;">verdana</li>
+                    <li style="font-family: Rockwell;">Rockwell</li>
+                    <li style="font-family: times new roman;">times new roman(padrão)</li>
+                </ul>
+                aqui já há uma lista de fontes legais/usuais:
+                <ul>
+                    <li style="font-family: great vibes;">great vibes</li>
+                    <li style="font-family: zilla slab;">zilla slab</li>
+                    <li style="font-family: maven pro;">maven pro</li>
+                    <li style="font-family: comfortaa;">comfortaa</li>
+                    <li style="font-family: rock salt; font-size: small">rock salt</li>
+                    <li style="font-family: pacifico;">pacifico</li>
+                    <li style="font-family: fira mono;">fira mono</li>
+                    <li style="font-family: kaushan script;">kaushan script</li>
+                    <li style="font-family: roboto mono;">roboto mono</li>
+                    <li style="font-family: raleway;">raleway</li>
+                    <li style="font-family: princess sofia;">princess sofia</li>
+                </ul>
+            </dd>
+            <h3>4.2-tamanhos</h3>
+            <p>os tamanos tem unidades de medidas absolutas e relativas<br>
+            as medidas absolutas são os centimetros(cm), milimetros(mm), polegadas(in), pixels(px), pontos(pt) e paica(pc)<br>
+            já os relativos são em(medida relativa ao tamanho atual da letra m da fonte), ex(relativo ao tamanho da letra x da fonte), rem(relativo a fonte que esta configurada no body), vw(relativo a largura da tela), vh(relativo a altura da tela) e ETC...<br>
+            tambem há a tag font-weigth que representa o peso(grossura) do das letras</p>
+        
+        <h3>shorthand</h3>
+        <p>as configurações da tipografia podem ser reduzidas a uma linha, basta colocar o comando font<br>
+        ex: font: style(estilo da fonte) weigh(grossura da fonte) font-size(tamanho da fonte) font-family(familia da fonte)<br>
+        exatamente na ordem e sem virgula</p>
+        <h3>4.3-importação de fontes do google fonts</h3>
+        <p>para importar fonts do google fonts 
+        para importar uma fonte do google fonts basta ao entrar no site escolher a fonte desejada clicar nela e depois clicar no canto superior direito no quadrado e copiar tudo que estiver dentro do @import e colar na pagina css no inicio da pagina</p>
+        <h3>4.4-baixar e utilizar fontes exteriores</h3>
+        <p>para baixar fontes é preciso um site de fontes(obvio) exemplo o site <a href="https://www.dafont.com" target="_blank" type="external">dafont</a>, depois de baixar a fonte no arquivo .zip é preciso extrair e colocar na mesma pasta que o arquivo css, a regra que tem de ser colocada é @font-face<br>
+        ex: @font-face{ font-family: "nome da fonte"; url("qual o nome do arquivo") format("#")}<br>
+        sendo # o tipo de arquivo, existem 5 tipos de arquivo o tipo opentype(.otf), o tipo truetype(ttf), o tipo truetype-aat(apple advanced typography) são os mais usados porem tambem há o tipo embedded-opentype e o tipo svg<br>
+        a regra @font-face define as configurações da fonte quando ela for chamada podendo inserir outras caracteristicas como o font-size ou font-style<br>
+        (o nome e o tipo de fonte devem estar entre aspas duplas)</p>
+        <h3>4.5-descobrir fontes</h3>
+        <p>pra descobrir fontes deve se utilizar do site <a href="https://www.whatfontis.com" target="_blank" type="extrenal">what font</a> ou o site <a href="http://www.myfonts.com" target="_blank" type="external">myfonts</a> ou uma extenção, exemplo: o fonts ninja</p>
+    </ol>
+        <h2>5-seletores personalizados</h2>
+        o comando pode conter a classe e o id porém o id irá se sobressair sobre a classe, tambem há a possibilidade de conter duas classes separadas por um espaçamento
+        <h3>5.1-classe</h3>
+        as classes são colocadas com o comando class="nome" e chamadas no css .nome<br>
+        <h4>5.2-pseudo classes</h4>
+        <p>as pseudo classses são um tipo de teste logico<br>
+        ex: button:active{background-color: blue;}<br>
+        deixaria o fundo do botão azul se o botão estiver precionado</p>
+        <h4>5.3-pseudo elementos</h4>
+        <p>um pseudo elemento é como uma pseudo classe só que para um elemento</p>
+        <h3>5.4-id</h3>
+        o id é colocado com id="nome" e são chamadas com #nome<br></p>
+        <h3>5.-teste logico</h3>
+        <p>
+            o simbolo de chamdo pode servir como teste logico<br>
+            ex: h1#principal{color: blue;}<br>
+            transformaria a cor do h1 para azul se tiver a indentificação(id) igual a principal</p>
+        <h2>6-caixas</h2>
+        <p>há varios tipos de caixas mas todas são classificadas com box-level(ocupa toda a largura da box em que está) ou inline level(não ocupa toda a largura da box onde está) ou inline-block(tem propriedades inline-level e box-level)</p>
+        <p><strong>exemplo de tipo box-level</strong></p>
+            <ul>
+            <li>div</li>
+            <li>h1-h6</li>
+            <li>p</li>
+            <li>main</li>
+            <li>header</li>
+            <li>nav</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>footer</li>
+            <li>form</li>
+            <li>video</li>
+            </ul>
+        <p><strong>exemplo de tipo inline-level</strong></p>
+            <ul>
+                <li>span</li>
+                <li>a</li>
+                <li>code</li>
+                <li>small</li>
+                <li>strong</li>
+                <li>em</li>
+                <li>sup-sub</li>
+                <li>label</li>
+                <li>button</li>
+                <li>input</li>
+                <li>select</li>
+            </ul>
+        <h3>6.1-grouping tags</h3>
+        <p>grouping tags são tags de agrupamento que consistem em caixas(box) que representão alguma parte do seu site existem varios tipos de grouping tags aqui estão algumas:<br>
+        <ol>
+            <li><strong>header</strong>, representa o cabeçalho do seu site</li>
+            <li><strong>main</strong>, representa o conteudo principal do seu site</li>
+            <li><strong>footer</strong>, representa o rodapé do seu site</li>
+            <li><strong>section</strong>, representa uma seção do seu site</li>
+            <li><strong>article</strong>, representa um artigo do seu site</li>
+            <li><strong>aside</strong>, representa um assunto periferico do artigo</li>
+            <li><strong>nav</strong>, representa a barra de navegação</li>
+        </ol></p>
+        <h3>6.2-box radius</h3>
+        <p>o raio da borda é atribuido em sentido horario quando é escrito por extenço, quando são dois valores o primeiro valor representa a canto superior esquerdo e o canto inferior direito e o segundo valor representa o canto superior direito e o canto inferior esquerdo, mas normalmente usa-se como uma shorthand</p>
+        <h2>7-teste de layout</h2>
+        <p>para testar o seu layout deve-se utilizar o site <a href="https://www.mockflow.com" target="_blank" rel="external">mockflow</a></p>
+        <h2>8-variaveis</h2>
+        <p>as variaveis são escritas com :root{--cor0: #ffffff;}<br>
+        onde cada variavel começa com -- logo depois vem o nome que no caso é cor0 e depois vem o significado dessa variavel</p>
+        <h2>9-transições</h2>
+        <p>pode-se fazer uma transição com o simples comando transition-duration: #;<br>
+        sendo # o tempo, mudando sua configuração com um dalay do tempo que você colocou</p>
+        
+        
+        </main>
+</body>
+</html>

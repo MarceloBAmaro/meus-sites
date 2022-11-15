@@ -26,5 +26,13 @@
     ('valores');
 
     select * from pessoas;
+
+    alter table pessoas
+    add column nome varchar(20) first not null,
+    drop column genero;
+
+    truncate table pessoas;
+
+    
 </body>
 </html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulas HTML</title>
+    <link rel="shortcut icon" href="midia/html icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body style="font-family:arial,gill sans mt, Helvetica, impact">
+    <nav>
+        <a href="inicio.html" rel="prev">inicio</a>
+        <a href="aulas css.html">css</a>
+        <a href="">python</a>
+    </nav>
+    <main id="main1">
+        <h1>Resumo aulas HTML</h1>
+        <h2>1-formatação</h2>
+        <ol>
+            <h3>1.1-hieranquia dos titulos</h3>
+            <p>os titulos tem uma hieranquia que se resume a o numero que vem depois de H<br>
+            ex: &lt;H1&gt;&lt;/H1&gt;<br>
+            o número pode ir até 6, caso o número for maior de 6 o titulo NÃO sera contado porém as palavras serão escritas<br>
+            ex: &lt;H10&gt;olá, mundo&lt;/H10&gt;<br>
+            o "olá, mundo" seria escrito mas sem formatação de titulo nenhum</p>
+            <h3>1.2-principais formatações</h3>
+            <h4>há 14 principais formatações</h4>
+                <dl>
+                    <dt><strong>negrito/destaque</strong><br></dt>
+                    <dd>
+                        é escrito com o comando &lt;STRONG&gt;, deixa as palavras selecionadas com uma espessura mais forte<br>
+                        ex: &lt;STRONG&gt;esta é uma frase em negrito/destaque&lt;/STRONG&gt;<br>
+                        formaria a frase: <strong>esta é uma frase em negrito/destaque</strong>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>italico/destaque</strong><br></dt>
+                    <dd>
+                        é escrito com o comando &lt;EM&gt;, deixa as palavras selecionadas com um aspecto curvado<br>
+                        ex: &lt;EM&gt;esta é uma frase em italico/destaque&lt;/EM&gt;<br>
+                        formaria a frase: <em>esta é uma frase em italico/destaque</em>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto marcado</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;MARK&gt;, deixa as palavras escolhidas marcadas(obvio)<br>
+                        ex: &lt;MARK&gt;esta é uma frase marcada&lt;/STRONG&gt;<br>
+                        formaria a frase: <mark>esta é uma frase marcada.</mark><br>
+                        a cor pode ser mudada com o comando &lt;STYLE&gt; dentro de MARK<br>
+                        ex: &lt;MARK STYLE="background-color: blue"&gt;frase marcada com a cor azul&lt;/MARK&gt;(sendo "azul" a cor, que fica a sua escolha)<br>
+                        agora a frase é: <mark style="background-color:blue">frase marcada com a cor azul</mark><br>
+                        ou pode ser mudada com o comando na cabeça(&lt;head&gt;)<br>
+                        ex: &lt;head&gt;<br>&lt;STYLE&gt;<br>MARK{backgraund-color="blue"}<br>&lt;/STYLE&gt;<br>&lt;/head&gt;<br>
+                        neste exemplo a cor seria usada de modo geral em todos os MARKS se já NÃO estiver definido a cor(ou qualquer outra customização) dentro do MARK
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto pequeno</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;SMALL&gt;, deixa as palavras selecionadas menores<br>
+                        ex: &lt;SMALL&gt;esta é uma frase com letras pequenas&lt;/SMALL&gt;<br>
+                        formaria a frase: <small>esta é uma frase com letras pequenas</small>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto excluido</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;DEL&gt;, faz com que as palavras elecionadas sejam mostradas porém não consideradas<br>
+                        ex: &lt;DEL&gt;esta é uma frase excluida&lt;/DEL&gt;<br>
+                        formaria a frase: <del>esta é uma frase excluida</del>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto inserido</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;INS&gt;, faz com que as palavras selecionadas ganhem êmfase para mostrar que foram inseridas<br>
+                        ex: &lt;INS&gt;esta é uma frase com êmfase/inserida&lt;/INS&gt;<br>
+                        formaria a frase: <ins>esta é uma frase com êmfase/inserida</ins>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto sobrescrito</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;SUP&gt;, é usada para escrever coisas do tipo X<sup>2</sup><br>
+                        ex de equação: X&lt;SUP&gt;3&lt;/SUP&gt + 5<br>
+                        formaria a equação: X<sup>3</sup> + 5
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto subscrito</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;SUB&gt;, é usado para escrever coisas do tipo H<sub>2</sub>O<br></dt>
+                        
+                            ex: a molecula da água é H&lt;SUB&gt;2&lt;/SUB&gt;O<br>
+                            formaria a frase: a molecula da água é H<sub>2</sub>O
+                        </dd>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>codigo-fonte</strong><br></dt>
+                    <dd>
+                        é esrcrito com &lt;CODE&gt;, deixa as letras com o mesmo tamanho<br>
+                        ex: libidinoso -> <code>libidinoso</code>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>codigo-indentação</strong><br></dt>
+                    <dd>
+                        é escrita com o codigo &lt;PRE&gt;, mantem a indentação(arrumação) que estava no codigo<br>
+                        ex: &lt;PRE&gt;este é um codigo que <br>mantem a indentação<br>original&lt;/PRE&gt;
+                        formaria a frase:<pre>
+    este é um cogigo que
+    mantem indentação
+    original
+                        </pre>
+                    </dd>
+                    </dl>
+                a letra esta menor porque normalmente se utiliza para escrever codigos de programação</li>
+                <dl>
+                    <dt><strong>citação</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;Q&gt;, serve para mostrar para o sistema que as palavras escritas são uma citação<br>
+                        ex: como já dizia socrates:&lt;Q&gt;só sei que nada sei&lt;/Q&gt;<br>
+                        formaria a frase: como já dizia socrates:<q>só sei que nada sei</q>
+                    </dd></dl>
+                    <dl><strong>citações em bloco</strong><br>
+                    <dd>
+                        é escrita com &lt;CITE&gt;, se usa para escrever uma ciação com mais de um paragrafo e pode conter o link do site de onde você tirou essa citação<br>
+                        ex: freud: &lt;CiTE&gt;Antes de diagnosticar a si mesmo comdepressão ou baixa-autoestima, primeiro tenha certeza de que você não está, de fato, cercado por IDIOTAS.&lt;/CITE&gt;<br>
+                        formaria a frase: freud: <cite>Antes de diagnosticar a si mesmo com depressão ou baixa-autoestima, primeiro tenha certaza de que você não está, de fato, cercado por IDIOTAS</cite>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>abreviações</strong><br></dt>
+                    <dd>
+                        é escrita com &lt;ABBR&gt;, serve para que quando o usuario passar o mouse em cima da abreviação mostre o nome inteiro<br>
+                        ex: &lt;ABBR TITLE="HyperText Markup Language"&gt;html&lt;/ABBR&gt;<br>
+                        formaria a frase: <abbr title="HyperText Markup Language">html</abbr><br>
+                        (coloque o mouse em cima)
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><strong>texto invertido</strong><br></dt>
+                    <dd>
+                        é escrito com &lt;BDO&gt;, faz com que as palavras selecionadas sejam escritas invertidas<br>
+                        ex: &lt;BDO DIR="rtl"(right to left(direita para esquerda))&gt;esse é um texto invertido&lt;/BDO&gt;<br>
+                        formaria a frase: <bdo dir="rtl">esse é um texto invertido</bdo><br>
+                        o rtl pode ser mudado para ltr(left to right(esquerda para direita))
+                    </dd>
+                </dl>
+            </ol>
+            <h3>1.3-simbolos especiais</h3>
+            <ol>
+                <li><strong>marca registrada &reg;</strong><br>
+                é representada por &amp;reg&semi;</li>
+                <li><strong>copyright &copy;</strong><br>
+                é representada por &amp;copy&semi;</li>
+                <li><strong>fração</strong><br>
+                 a fração é representada pelo </li>
+                <li><strong>grau &ring;</strong><br>
+                é representado por &amp;ring&semi;</li>
+                <li><strong>delta &Delta;</strong><br>
+                é representado por &amp;Delta&semi;<br>
+                (o "D" tem que estar em maiusculo)</li>
+                <li><strong>pi &pi;</strong><br>
+                é representado por &amp;pi&semi;</li>
+                <li><strong>alfa, beta e gama &alpha;, &beta; e &gamma;</strong><br>
+                alfa &alpha;, é representado por &amp;alpha&semi;<br>
+                beta &beta;, é rapresentado por &amp;beta&semi;<br>
+                gama &gamma;, é representado por &amp;gamma&semi;</li>
+                <li><strong>reticências &hellip;</strong><br>
+                é representado por &amp;hellip&semi;</li>
+                <li><strong>infinito &infin;</strong><br>
+                é representado por &amp;infin&semi;</li>
+                <li><strong>numero &numero;</strong><br>
+                é representado por &amp;numero&semi;</li>
+                <li><strong>comercio &trade;</strong><br>
+                é representado por &amp;trade&semi;</li>
+                <li><strong>moedas</strong><br>
+                euro &euro; é repreentado por &amp;euro&semi;<br>
+                dollar &dollar; é representado por &amp;dollar&semi;<br>
+                real &real;&dollar; é representado por &amp;real&semi;+&amp;dollar&semi;<br>
+                yen &yen; é representado por &amp;yen&semi;</li>
+                <li><strong>blocos &block; &blk12; &blk14; &blk34;</strong><br>
+                &block; é representado por &amp;block&semi;<br>
+                &blk12; é representado por &amp;blk12&semi;<br>
+                &blk14; é representado por &amp;blk14&semi;<br>
+                &blk34; é representado por &amp;blk34&semi;</li>
+                <li><strong>sexo &female; &male;</strong><br>
+                &female; é representado por &amp;female&semi; <br>
+                &male; é representado por &amp;male&semi;</li>
+                <li><strong>flechas &uarr; &darr; &larr; &rarr;</strong><br>
+                as flechas são representas por &amp;#arr&semi;<br>
+                sendo # o lado que pode ser L(esquerda) R(direita) U(cima) D(baixo)</li>
+            <h3>1.4-listas</h3>
+            <h4>1.4.1-listas ordenadas</h4>
+            são representas por &lt;OL&gt;<br>
+            ex: &lt;OL&gt;<br>
+            &lt;LI&gt;euro&lt;/LI&gt;<br>
+            &lt;LI&gt;dollar&lt;/LI&gt;<br>
+            &lt;LI&gt;real&lt;/LI&gt;<br>
+            &lt;/OL&gt;<br>
+            formaria: <ol><li>euro</li><li>dollar</li><li>real</li></ol>
+            a representação dos numeros pode ser mudada para numeros romanos maisculos ou minusculos ou letras maiusculas ou minusculas:
+            <ol>
+            <ol type="A" start="1">
+                <li><strong>letra maiuscula</strong><br>
+                é escrita com &lt;OL TYPE="A"&gt;</li>
+            </ol>
+            <ol type="a" start="2">
+                <li><strong>letra minuscula</strong><br>
+                é escrita com &lt;OL TYPE="a"&gt;</li>
+            </ol>
+            <ol type="i" start="3">
+                <li><strong>romana minuscula</strong><br>
+                é escrita com &lt;OL TYPE="i"&gt;</li>
+            </ol>
+            <ol type="I" start="4">
+                <li><strong>romana maiuscula</strong><br>
+                é escrita com &lt;OL TYPE="I"&gt;</li>
+            </ol>
+            </ol>
+            podem ser inicidas do ponto onde você quiser com o comando &lt;OL START="#"&gt;<br>
+            sendo # o ponto de inicio(a escala de conta só aceita numeros)<br>
+            o tipo de lista e o inicio da lista podem ser combinados
+            <h4>1.4.2-listas desordenadas</h4>
+            é escrita com &lt;UL&gt;<br>
+            ex: &lt;UL&gt;<br>&lt;LI&gt;pão&lt;/LI&gt;<br>&lt;LI&gt;queijo&LT;/LI&gt;<br>&lt;/ul&gt;<br>
+            formaria: <ul><li>pão</li><li>queijo</li></ul><br>
+            o tipo de lista pode ser mudada para disco ou circulo vazado ou quadrado
+            <ol>
+                <li><strong>disco</strong><br>
+                é escrito com &lt;UL TYPE="DISC"</li>
+                <li><strong>circulo vazado</strong><br>
+                é escrito com &lt;UL TYPE="CIRCLE"&gt;</li>
+                <li><strong>quadrado</strong><br>
+                é escrito com &lt;UL TYPE="SQUARE"</li>
+            </ol>
+        
+        
+            <h4>1.4.3-listas de definição</h4>
+            uma lista de definição é escrita com &lt;DT&gt;(termo, palavra-chave) e &lt;DD&gt;(definição da palavra chave) dento de &lt;DL&gt;(corpo da lista)<br>
+            ex: &lt;DL&gt;&lt;DT&gt;html&lt;/DT&gt;&lt;DD&gt;é uma linguagem de marcação e usa-se para criar cites&lt;/DD&gt;&lt;DT&gt;<br>
+            formaria: <dl>
+                <dt>html</dt><dd>é uma linguagem de marcação e usa-se para criar cites</dd>
+            </dl>
+        </ol>
+        <h2>2-importação de imagem, video e audio</h2>
+        <ol>
+            <h3>2.1-importação de imagem</h3>
+            <p>
+                uma imagem pode ser importada com ocomando &lt;IMG&gt;<br>
+                ex: &lt;IMG SRC="onde procurar" ALT="contra medida se caso a imagem não for carregada"&gt;<br>
+                a sua altura e largura podem ser mudadas com os comandos width(largura) e height(altura)<br>
+                ex:  &lt;IMG WIDTH="largura" HEIGHT="altura" SRC="" ALT=""&gt;<br>
+                as imagems podem ser importadas do computador ou de um link
+                <h4>2.1.1-imagem dinamica</h4>
+                a diferenciação de imagem por midea se constroi com o comando &lt;SOURCE&gt; dentro de &lt;PICTURE&gt;<br>
+                ex: &lt;PICTURE&GT;<br>
+                &LT;SOURCE SRCEST="onde procurar" MEDIA="(@-!: (numero em px) REL="image/"&GT;<br>
+                &lt;IMG SRC="onde procurar"&gt;<br>
+                &LT;/PICTURE&GT;<br>
+                formaria:<br>
+                <picture>
+                    <source media="(min-width: 1100px)" srcset="midia/img-grande.png">
+                    <source srcset="midia/img-media.png" media="(min-width: 800px)">
+                    <img src="midia/img-pequena.png" alt="a imagem não pode ser carregada">
+                </picture>
+            </p>
+            <h3>2.3-importação de icone de aba</h3>
+            <p>
+                <link rel="shortcut icon" href="favicon.ico" type="logo/png">
+                é escrito com &lt;LINK:FAVICOM REL="shortcut icon" href="onde procurar" TYPE="IMAGE/x-icon"&gt;
+                sendo @ max(maximo) ou min(minimo) e ! sendo width(largura) e heigth(altura)
+                (é necessario evidenciar o tipo de ação com o camdo rel="tipo")<BR>
+                <h3>2.2-importação de video</h3>
+                os videos podem ser importados com o comando &lt;VIDEO&gt;<BR>
+                ex: &lt;VIDEO SRC="onde procurar" CONTROLS&gt;&lt;/VIDEO&gt; <br>
+                porem há outro jeito melhor de importar videos que é:<br>
+                &lt;VIDEO CONTROLS&gt;<br>
+                &lt;SOURCE SRC="onde procurar" TYPE="o tipo de arquivo"&gt;<br>
+                &lt;/VIDEO&gt;<br>
+                essa forma de importação é um efeito em cascata onde o comando tenta acionar o primeiro primeiro que o segundo e assim por diante<br>
+                o comando pode conter a largura(width="largura") e/ou a altura(heigth="altura") <br>
+                pode conter a tag LOOP<br>
+                tambem pode conter a tag &lt;POSTER&gt; que faz uma foto ser colocada como tela de descanso do video.
+                <p>
+                <video muted preload="metadata" loop poster="midia/vid-capa.png" width="200" controls>
+                    <source src="midia/vid-m4v.m4v" type="video/m4v">
+                    <source src="midia/vid-webm.webm" type="video/webm">
+                    <source src="midia/video.mp4" type="video/mp4">
+                    o video não pode ser carregado pelo seu navegador
+                </video>
+                <p>
+                Os videos tambem podem ser importados dentro do propio site de hospedagem(ex: youtube) e você pode conseguir o codigo diretamente de lá, lista de como importar videos de cada serviço de hospedagem:
+                <ol>
+                    <li><strong>youtube e vimeo</strong><br>
+                        vá em compartilhar e selecione a opção incorporar, depois copie e cole no seu site.
+                    </li>
+                </ol>
+            </p>
+            <h3>3.1-importação de audio</h3>
+            <p>
+                a importação de audio é feita com &lt;AUDIO&gt;
+                ex: &lt;AUDIO SRC="onde procurar" CONTROLS AUTOPLAY&GT;&LT;/audio&GT;
+                porém há outro jeito melhor de se fazer com o comando &lt;AUDIO&gt;<br>
+                ex: &lt;AUDIO PRELOAD="#" CONTROLS&gt;<br>
+                &lt;SOURCE SRC="onde procurar" TYPE"audio/mpeg(audio mp3 mais comumente usado)"&GT;&lt;/AUDIO&GT;<br>
+                formaria:<br>
+                <p>
+                <audio preload="metadata" loop controls>
+                    <source src="midea/bloom.mp3" type="audio/mpeg">
+                    infelismente seu navegador não suporta este audio
+                </audio><br>
+                </p>
+                sendo # o precarregamento que pode ser auto(carrega o audio inteiro) ou metadata(carrega imformações principais primeiramente) ou none(não carrega nenhuma informação)<br>
+                o comando pode ter a tag &lt;LOOP&gt; que faz a musica recomeçar depois de terminar
+                    </ol>
+            </p>
+        <h2>3-importação de objetos exteriores</h2>
+        <ol>
+            <h3>3.1-link</h3>
+            <p>
+                é escrito com &lt;A&gt;
+                ex: &lt;A HREF="https://www.youtube.com/watch?v=ZfWv96cxp9I"&gt;este é um link&lt;/A&gt;<br>
+                formaria:<a href="https://www.youtube.com/watch?v=ZfWv96cxp9I" rel="external">este é um link</a><br>
+                pode conter a tag &lt;TITLE&gt; para que quando o usuario coloque o mouse em cima do link apareça um titulo<br>
+                ex: &lt;A HREF="https://www.youtube.com/watch?v=ZfWv96cxp9I" TITLE="este é o titulo"&gt;este é um link com titulo&lt;/A&gt;<br>
+                formaria: <a href="https://www.youtube.com/watch?v=ZfWv96cxp9I" rel="external" TITLE="este é o titulo">este é um link com titulo</a><br>
+                (coloque o mouse em cima do link)<br>
+                é recomendavel colocar o &lt;REL="#"&gt; para informar se o link é externo ou interno<br>
+                sendo # external(externo) ou next(proximo) ou prev(anterior) ou nofollow(site que não tem seu aval).<br>
+                ex de link interno: <a href="aulas css.html" rel="next">segunda pagina</a><br>
+                para abrir o link em outra pagina basta colocar o comando &lt;TARGET="_blank"&gt; no link
+                para abrir na mesma pagina usa-se o comando &lt;TARGET="_self"&gt; no link
+                <h4>3.1.1-dowload por link</h4>
+                são escritos com &lt;A HREF="onde procurar" DOWLOAD="o que é para baixar" TYPE="o tipo de arquivo que é para baixar"<br>
+                o tipo de arquivo pode ser encontrado no site da <a href="https://www.iana.org/assignments/media-types/media-types.xhtml#image" rel="external" target="_blank">iana</a><br>
+                ex: &lt;A HREF="PDF/TESTE.pdf" DOWLOAD="PDF/TESTE.pdf" TYPE="application/pdf" &gt;clique aqui para baixar um arquivo pdf&lt;/A&gt;<br>
+                formaria: <a href="PDF/TESTE.pdf" download="TESTE.pdf" target="_blank" type="application/pdf">clique aqui para baixar um arquivo pdf</a>
+        
+            </p>
+        </ol>
+    </main>
+</body>
+</html>
