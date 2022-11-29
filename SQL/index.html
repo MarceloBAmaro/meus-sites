@@ -33,6 +33,9 @@
 
     truncate table pessoas;
 
-    
+    select nome, count(nome) from pessoas
+    where id >= '5' 
+    group by nascimento
+    order by nascimento desc;
 </body>
 </html>
